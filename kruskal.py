@@ -69,35 +69,3 @@ class ConnectedGraph:
         print("Minimum Spanning Tree (Cost = {0})".format(cost))
         mst.display()
 
-if __name__ == '__main__':
-    g = ConnectedGraph({
-        ('a', 'b'): 1,
-        ('b', 'c'): 3,
-        ('a', 'c'): 0,
-    })
-    g.displaySpan()
-
-    g = ConnectedGraph({
-        ('a', 'b'): -1,
-        ('a', 'c'): 8,
-        ('a', 'd'): 4,
-        ('b', 'c'): 7,
-        ('b', 'd'): 3,
-        ('c', 'd'): 0
-    })
-    g.displaySpan()
-
-    import random
-    import string
-    for j in range(50):
-        d = {}
-        for i in range(100):
-            c1 = random.choice(string.ascii_letters)
-            c2 = random.choice(string.ascii_letters)
-            if c1 != c2:
-                d[(c1, c2)] = random.randint(0, 100)
-        g = ConnectedGraph(d)
-        try:
-            g.displaySpan()
-        except:
-            print("There's a bug!")

@@ -1,0 +1,22 @@
+Hackpad: https://hackpad.com/unix-workshop-g9TNUeli8Mp
+
+$ which ssh
+$ echo $PATH
+$ export PATH=$PATH:"..."
+$ ssh-keygen -t rsa -C "your_email@example.com"
+$ ssh you@inst "mkdir ~/.ssh"
+$ cat ~/.ssh/id_rsa.pub | ssh you@inst "cat >> ~/.ssh/authorized_keys"
+$ alias 61a='ssh you@inst'
+$ vim ~/.bashrc
+	alias 61a='ssh you@inst'
+$ grep -rn ConnectedGraph .
+$ cat kruskal.py stageXX/secret > kruskal.py
+$ ls -la kruskal.py && chmod +x kruskal.py
+$ grep -E "\w[\w\d]*\(" kruskal.py | wc -l 
+$ grep -E "def\s+" kruskal.py
+
+Alternative:
+	Use the grep examples from the earlier workshop;
+	https://github.com/HackBerkeley/CommandLineWorkshop
+
+	Instead of cobbling on recursive grep onto this.
