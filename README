@@ -11,6 +11,8 @@ $ vim ~/.bashrc
 	alias 61a='ssh you@inst'
 
 // go to phone-numbers
+	Use the grep examples from the earlier workshop;
+	https://github.com/HackBerkeley/CommandLineWorkshop
 
 $ grep -rn ConnectedGraph .
 $ cat stageXX/secret >> kruskal.py
@@ -18,8 +20,4 @@ $ ls -la kruskal.py && chmod +x kruskal.py
 $ grep -E "\w[\w\d]*\(" kruskal.py | wc -l 
 $ grep -E "def\s+" kruskal.py
 
-Alternative:
-	Use the grep examples from the earlier workshop;
-	https://github.com/HackBerkeley/CommandLineWorkshop
-
-	Instead of cobbling on recursive grep onto this.
+	
