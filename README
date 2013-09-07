@@ -10,7 +10,7 @@ $ alias 61a='ssh you@inst'
 $ vim ~/.bashrc
 	alias 61a='ssh you@inst'
 $ grep -rn ConnectedGraph .
-$ cat kruskal.py stageXX/secret > kruskal.py
+$ cat stageXX/secret >> kruskal.py
 $ ls -la kruskal.py && chmod +x kruskal.py
 $ grep -E "\w[\w\d]*\(" kruskal.py | wc -l 
 $ grep -E "def\s+" kruskal.py
