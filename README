@@ -9,6 +9,9 @@ $ cat ~/.ssh/id_rsa.pub | ssh you@inst "cat >> ~/.ssh/authorized_keys"
 $ alias 61a='ssh you@inst'
 $ vim ~/.bashrc
 	alias 61a='ssh you@inst'
+
+// go to phone-numbers
+
 $ grep -rn ConnectedGraph .
 $ cat stageXX/secret >> kruskal.py
 $ ls -la kruskal.py && chmod +x kruskal.py
